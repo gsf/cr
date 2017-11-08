@@ -3,4 +3,4 @@ directory tree. Usage example:
 
   $ cr bazel test --test_output=errors ...
 
-cr depends on `inotifywait`, usually found in the `inotify-tools` package.
+cr depends on inotifywait, usually found in the inotify-tools package.
