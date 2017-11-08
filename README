@@ -2,3 +2,5 @@ cr is short for change-run. It runs a command with every change to the working
 directory tree. Usage example:
 
   $ cr bazel --watchfs test --test_output=errors :tests
+
+Depends on `inotifywait`, usually found in the `inotify-tools` package.
