@@ -1,6 +1,12 @@
 cr is short for change-run. It runs a command with every change to the working
 directory tree. Usage example:
 
-  $ cr bazel test --test_output=errors ...
+    $ cr bazel test --test_output=errors ...
 
 cr depends on inotifywait, usually found in the inotify-tools package.
+
+For use in docker, include these lines in the Dockerfile:
+
+    RUN wget https://raw.githubusercontent.com/gsf/cr/master/cr \
+      && chmod +x cr \
+      && mv cr /usr/local/bin/
